@@ -1,10 +1,32 @@
 
-function valor() {
-var a = window.document.getElementById('numbera')
-var b = window.document.getElementById('numberb')
-var na = Number(a.value)
-var nb = Number(b.value)
-var result = nb > na? 'Válido' : 'Inválido'
-alert ('O valor é: ' + result)
+const form = document.getElementById('form-input');
+
+
+
+form.addEventListener('submit', function(e)) {
+
+    e.preventDefault();
 
 }
+
+var a = document.getElementById('numbera')
+
+var b = document.getElementById('numberb')
+
+var na = parseInt(a.value);
+
+var nb = parseInt(b.value);    
+
+if (nb > na) {
+
+    alert ('Formulário Válido')
+
+    } 
+    
+    else {
+
+    alert ('Formulário Inválido')
+
+    }
+
+
